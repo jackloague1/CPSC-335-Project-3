@@ -1,0 +1,43 @@
+array = [
+   [2, 5, 9, 21],
+   [-1, 0, 2], 
+   [-10, 81, 121], 
+   [4, 6, 12, 20, 150] 
+]
+
+Array_1 = [ 
+    [2, 5, 9, 21],
+    [-1, 0, 2],
+    [-10, 81, 121],
+    [4, 6, 12, 20, 150]
+    ]
+Array_2 = [ 
+    [10, 17, 18, 21, 29],
+    [-3, 0, 3, 7, 8, 11],
+    [81, 88, 121, 131],
+    [9, 11, 12, 19, 29]
+    ]
+Array_3  = [
+    [-4, -2, 0, 2, 7],
+    [4, 6, 12, 14],
+    [10, 15, 25],
+    [5, 6, 10, 20, 24]
+    ]
+
+sortedArray = []
+
+def merge(all_lists):
+    for i in all_lists:
+        for j in i:
+            sortedArray.append(j)
+    sortedArray.sort()
+    print(sortedArray)      
+    sortedArray.clear()
+print("Sorted array for sample output:")
+print(merge(array))
+print("Sorted Array for Array_1: ")
+print(merge(Array_1))
+print("Sorted Array for Array_2: ")
+print(merge(Array_2))
+print("Sorted Array for Array_3: ")
+print(merge(Array_3))
