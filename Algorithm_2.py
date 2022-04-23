@@ -24,20 +24,31 @@ Array_3  = [
     [5, 6, 10, 20, 24]
     ]
 
+finalArray = []
 sortedArray = []
+def merging(all_lists):
+	for i in all_lists:
+		for j in i:
+			finalArray.append(j)
+		
+	while finalArray:
+	    order = finalArray[0]
+	    for i in finalArray:
+	        if i < order:
+	            order = i
+	    sortedArray.append(order)
+	    finalArray.remove(order)
+        
+	   
+	
+	
 
-def merge(all_lists):
-    for i in all_lists:
-        for j in i:
-            sortedArray.append(j)
-    sortedArray.sort()
-    print(sortedArray)      
-    sortedArray.clear()
+	return sortedArray
 print("Sorted array for sample output:")
-print(merge(array))
-print("Sorted Array for Array_1: ")
-print(merge(Array_1))
+print(merging(array))
+print("\n", "Sorted Array for Array_1: ")
+print(merging(Array_1))
 print("Sorted Array for Array_2: ")
-print(merge(Array_2))
+print(merging(Array_2))
 print("Sorted Array for Array_3: ")
-print(merge(Array_3))
+print(merging(Array_3))
