@@ -10,7 +10,6 @@ def targetWords(Array_A, Array_B):
         j = 0
         # Iterate through each character in Array_A
         for i in range(0, len(Array_A[0])):
-            print(i)
             # If character of Array_A ([0][i]) is equal to character ([j]) of word ([k]) in Array_B
             if Array_A[0][i] == Array_B[k][j]:
                 # Move to next character of word in Array_B to check if it is also found in Array_A
