@@ -44,11 +44,13 @@ def merging(all_lists):
 	
 
 	return sortedArray
+
+
 print("Sorted array for sample output:")
 print(merging(array))
 print("\n", "Sorted Array for Array_1: ")
 print(merging(Array_1))
-print("Sorted Array for Array_2: ")
+print("\n","Sorted Array for Array_2: ")
 print(merging(Array_2))
-print("Sorted Array for Array_3: ")
+print("\n","Sorted Array for Array_3: ")
 print(merging(Array_3))
