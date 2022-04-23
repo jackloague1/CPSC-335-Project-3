@@ -26,9 +26,9 @@ Array_3  = [
     ]
 
 finalArray = []         #array of all values in the array
-sortedArray = []        #The sorted array of all values
+sortedArray = []        #The sorted array of all values in the array
 def merging(all_lists):
-    #puts into one array
+    #merges the values into one array
     for i in all_lists:
         for j in i:
             finalArray.append(j)
