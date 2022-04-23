@@ -11,6 +11,7 @@ Array_1 = [
     [-10, 81, 121],
     [4, 6, 12, 20, 150]
     ]
+
 Array_2 = [ 
     [10, 17, 18, 21, 29],
     [-3, 0, 3, 7, 8, 11],
@@ -24,33 +25,31 @@ Array_3  = [
     [5, 6, 10, 20, 24]
     ]
 
-finalArray = []
-sortedArray = []
+finalArray = []         #array of all values in the array
+sortedArray = []        #The sorted array of all values
 def merging(all_lists):
-	for i in all_lists:
-		for j in i:
-			finalArray.append(j)
-		
-	while finalArray:
-	    order = finalArray[0]
-	    for i in finalArray:
-	        if i < order:
-	            order = i
-	    sortedArray.append(order)
-	    finalArray.remove(order)
-        
-	   
-	
-	
+    #puts into one array
+    for i in all_lists:
+        for j in i:
+            finalArray.append(j)
+    #orders all the values in the array
+    while finalArray:
+        order = finalArray[0]
+        for i in finalArray:
+            if i < order:
+                order = i
+        sortedArray.append(order)
+        finalArray.remove(order)
 
-	return sortedArray
+    print(sortedArray)
+    sortedArray.clear()
 
-
+#prints the sorted arrays
 print("Sorted array for sample output:")
-print(merging(array))
+merging(array)
 print("\n", "Sorted Array for Array_1: ")
-print(merging(Array_1))
+merging(Array_1)
 print("\n","Sorted Array for Array_2: ")
-print(merging(Array_2))
+merging(Array_2)
 print("\n","Sorted Array for Array_3: ")
-print(merging(Array_3))
+merging(Array_3)
